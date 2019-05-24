@@ -2,67 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+		
         <title>Repair 760</title>
 		
-		
-		
-		<!--
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<style>
-		.mySlides {display:none;}
-		</style>
-		-->
-		
-		
-		
-		
+		<!--<style> .mySlides {display:none;} </style>-->
 		
     </head>
+	
     <body>
         <img src="https://repair760.github.io/images/Repair760_logo.png" width="30%" alt="logo">
-		<!--Click <a href="http://www.google.com"> here </a> to go to google.com. -->
+			
+			
+		<div class="content w3-display-container">
+			<img class="mySlides" src="https://repair760.github.io/images/Repair760_logo.png" 			style="width:100%">
+			<img class="mySlides" src="https://repair760.github.io/images/Repair760_Contact_face.png" 	style="width:100%">
+		</div>
 		
-		
-		
-	
-		
-		
-		
-		<h2 class="w3-center">Automatic Slideshow</h2>
+		<script>
+			var myIndex = 0;
+			carousel();
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="https://repair760.github.io/images/Repair760_logo.png" 		style="width:100%">
-  <img class="mySlides" src="https://repair760.github.io/images/Repair760_Contact_face.png" style="width:100%">
-  <img class="mySlides" src="https://repair760.github.io/images/Repair760_logo.png" 		style="width:100%">
-  <img class="mySlides" src="https://repair760.github.io/images/Repair760_Contact_face.png" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-		
-		
-		
-		
-		
-		
-		
-		
+			function carousel() 
+			{
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.display = "none";  
+				}
+				
+				myIndex++;
+				
+				if (myIndex > x.length) 
+				{
+					myIndex = 1;//;added
+				}    
+				
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 3000); // Change image every 3 seconds
+			}
+		</script>		
 	</body>
 </html>
