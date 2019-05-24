@@ -2,17 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- head definitions go here -->
         <title>Repair 760</title>
+		
+		
+		
+		
+		
+		
+		
+		
+		
     </head>
-    <body bgcolor="#ffffff">
-        <!-- the content goes here -->
-        <!--<div>-->
-            <!--<h1><font color="#000000"></font></h1> -->
-        <!--</div>-->
-        <img src="https://repair760.github.io/images/Repair760_logo.png" 
-			width="20%" height="auto" 
-			alt="logo">
-		Click <a href="http://www.google.com"> here </a> to go to google.com.
+    <body>
+        <img src="https://repair760.github.io/images/Repair760_logo.png" width="30%" alt="logo">
+		<!--Click <a href="http://www.google.com"> here </a> to go to google.com. -->
+		
+		
+		
+	
+		
+		
+		
+		<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://repair760.github.io/images/Repair760_logo.png" style="width:100%">
+  <img class="mySlides" src="https://repair760.github.io/images/Repair760_Contact_face.png" style="width:100%">
+  <img class="mySlides" src="https://repair760.github.io/images/Repair760_logo.png" style="width:100%">
+  <img class="mySlides" src="https://repair760.github.io/images/Repair760_Contact_face.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+		
+		
+		
+		
+		
+		
+		
+		
 	</body>
 </html>
