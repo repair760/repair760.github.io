@@ -54,26 +54,38 @@
 	</head>
 	
 	<body>
+	<button class="tablinks" 
+				onclick="onTabClick(event, 'home')" 
+				id="defaultTab" style="background:url('https://repair760.github.io/images/Repair760_logo.png')">
+			TEST1?</button>
 	
-
-		<div class="tab">
-			<img src="https://repair760.github.io/images/Repair760_logo.png" style="width:15%"><!--   -->
-			<button class="tablinks" onclick="onTabClick(event, 'home')" id="defaultTab">home</button>
+		<div class="tab" style="width:60%; margin:auto">
+			img src="https://repair760.github.io/images/Repair760_logo.png" style="width:15%"--><!--   -->			
+			<!--button class="tablinks" 
+				onclick="onTabClick(event, 'home')" 
+				id="defaultTab" style="background:url('https://repair760.github.io/images/Repair760_logo.png')">
+			</button-->
+			
+			<button class="tablinks" 
+				onclick="onTabClick(event, 'home')" 
+				id="defaultTab" style="background:url('https://repair760.github.io/images/Repair760_logo.png')">
+			TEST2?</button>
+			
 			<button class="tablinks" onclick="onTabClick(event, 'about')">about us</button>
 			<button class="tablinks" onclick="onTabClick(event, 'contact')">contact us</button>
 		</div>
 
-		<div id="home" class="tabcontent">
+		<div id="home" class="tabcontent" style="width:60%; margin:auto">
 			<h3>home</h3>
 			<p>This displays home content.</p>
 		</div>
 
-		<div id="about" class="tabcontent">
+		<div id="about" class="tabcontent" style="width:60%; margin:auto">
 			<h3>about</h3>
 			<p>This displays about content.</p> 
 		</div>
 
-		<div id="contact" class="tabcontent">
+		<div id="contact" class="tabcontent" style="width:60%; margin:auto">
 			<h3>conatct</h3>
 			<p>This displays contact content.</p>
 		</div>
